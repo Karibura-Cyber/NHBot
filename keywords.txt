@@ -1,0 +1,10 @@
+##########################
+
+sserial	KEYWORD1
+NHSetup KEYWORD1
+motor KEYWORD1
+sleep KEYWORD1
+
+##########################
+
+NHBot	KEYWORD2
