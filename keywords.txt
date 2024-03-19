@@ -7,11 +7,11 @@ sv4 KEYWORD1
 
 sserial	KEYWORD1
 NHSetup KEYWORD1
-motor KEYWORD1
 sleep KEYWORD1
 wait_OK KEYWORD1
 analog KEYWORD1
 digital KEYWORD1
+motor KEYWORD1
 servo KEYWORD1
 
 ao KEYWORD1
