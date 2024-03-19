@@ -13,7 +13,16 @@ void wait_OK();
 
 //---- Motor Functions ----//
 void NHSetup();
-void motor(int speed_A, int speed_B, int duration);
+void motor(int speed_A, int speed_B);
+void fd(int speed);
+void bk(int speed);
+void fd2(int speedA, int speedB);
+void bk2(int speedA, int speedB);
+void sl(int speed);
+void sr(int speed);
+void tl(int speed);
+void tr(int speed);
+void ao();
 //------------------------//
 
 //---- IO functions ----//

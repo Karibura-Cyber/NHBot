@@ -62,14 +62,19 @@ void set_motor_currents(int pwm_A, int pwm_B)
   set_motor_pwm(pwm_B, MOT_B1_PIN, MOT_B2_PIN);
 }
 
-void motor(int speed_A, int speed_B, int duration) //Motor speed control
+void motor(int speed_A, int speed_B)                                      // Motor speed control (non-blocking)
 {
   set_motor_currents(speed_A, speed_B);
-  delay(duration);
 }
 
-void servo(int pin, int degree) //Servo control function
-{
-  sv.attach(pin);
-  sv.write(degree);
-}
+void ao() { motor(0,0); }                                                 //Stop motor
+void fd(int speed) { motor(speed, speed); }                               // Forward
+void bk(int speed) { motor(-speed, -speed); }                             // Backward
+void fd2(int speedA, int speedB) { motor(speedA, speedB); }               // Forward seperate wheel speed
+void bk2(int speedA, int speedB) { motor(-speedA, -speedA); }             // Backward seperate wheel speed
+void sl(int speed) { motor(-speed, speed); }                              // Spin Left
+void sr(int speed) { motor(speed, -speed); }                              // Spin Right
+void tl(int speed) { motor(0, speed); }                                   // Turn Left
+void tr(int speed) { motor(speed, 0); }                                   // Turn Right
+
+void servo(int pin, int degree) { sv.attach(pin); sv.write(degree); }     // Servo control

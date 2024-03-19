@@ -1,9 +1,28 @@
 ##########################
 
+sv1 KEYWORD1
+sv2 KEYWORD1
+sv3 KEYWORD1
+sv4 KEYWORD1
+
 sserial	KEYWORD1
 NHSetup KEYWORD1
 motor KEYWORD1
 sleep KEYWORD1
+wait_OK KEYWORD1
+analog KEYWORD1
+digital KEYWORD1
+servo KEYWORD1
+
+ao KEYWORD1
+fd KEYWORD1
+bk KEYWORD1
+fd2 KEYWORD1
+bk2 KEYWORD1
+sl KEYWORD1
+sr KEYWORD1
+tl KEYWORD1
+tr KEYWORD1
 
 ##########################
 
